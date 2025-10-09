@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.cont {
+  background-color: rgb(226, 172, 236);
+  height: 500px;
+  width: 1350px;
+}

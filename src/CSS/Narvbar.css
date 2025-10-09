@@ -1,0 +1,21 @@
+.nav-container {
+  background-color: black;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  margin-top: -140px;
+}
+
+.nav {
+  padding-bottom: -30px;
+  padding-left: 120px;
+  padding-right: 80px;
+  border: 0px;
+}
+
+.logo {
+  width: 100px;
+  margin-top: -5px;
+}
