@@ -5,15 +5,29 @@ import "./App.css";
 import "./components/Narvbar";
 import Navbar from "./components/Narvbar";
 import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import Error from "./components/Error";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <div className="cont">
         <Navbar />
-        <ItemListContainer saludos="Bienvenido a la tienda!!" />
+        <Routes>
+          <Route
+            path="/"
+            element={<ItemListContainer saludos="Bienvenido a la tienda!!" />}
+          />
+          <Route
+            path="/category/:type"
+            element={<ItemListContainer saludos="Bienvenido a la tienda!!" />}
+          />
+          <Route path="/Item/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 

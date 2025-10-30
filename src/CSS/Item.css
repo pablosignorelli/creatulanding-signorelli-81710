@@ -1,0 +1,23 @@
+.iTem1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 18rem;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.iTem2 {
+  height: 150px;
+  width: 150px;
+}
+.iTem3 {
+  display: flex;
+  margin-left: 70px;
+}
+.iTem4 {
+  display: flex;
+  margin-left: 75px;
+  color: purple;
+}

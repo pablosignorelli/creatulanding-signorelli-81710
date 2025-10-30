@@ -1,14 +1,24 @@
 import CartWidge from "./CartWidge";
 import "../CSS/Narvbar.css";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="nav-container">
-      <a className="nav">
-        <img src="./logo.jpg" alt="logo" className="logo" />
-      </a>
-      <a className="nav">Productos</a>
-      <a className="nav">Novedades</a>
-      <a className="nav">Promoción</a>
+      <NavLink className="nav" to="/">
+        <img src="../logo.png" alt="logo" className="logo" />
+      </NavLink>
+
+      <NavLink className="a-nav" to="/category/oferta">
+        Oferta
+      </NavLink>
+      <NavLink className="nav" to="/category/recomendacion">
+        Recomendación
+      </NavLink>
+
+      <NavLink className="nav" to="/category/premiun">
+        Premiun
+      </NavLink>
       <CartWidge />
     </nav>
   );
